@@ -97,7 +97,6 @@ def depthFirstSearch(problem):
             state,dir,d_cost = i
             # if state not in explored and not [state == j[0] for j in fringe.list].count(True):
             if state not in explored:
-
                 fringe.push((state, action+[dir], cost+d_cost))
 
                 
