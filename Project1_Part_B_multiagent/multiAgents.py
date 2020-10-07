@@ -293,13 +293,13 @@ def betterEvaluationFunction(currentGameState):
     zghost = 0
     for ind, val in enumerate(scared_times):
         if val > 0:
-            zghost += 1/manhattan(ghost_states[ind].getPosition())
+            zghost += 3*1/manhattan(ghost_states[ind].getPosition())
         else:
             zghost -= manhattan(ghost_states[ind].getPosition())
     
     zcapsule = sum([1.0/manhattan(i) for i in capsule_states])
     
-    return zfood + zghost + zcapsule + currentGameState.getScore()
+    return zfood + zghost + zcapsule + 5*currentGameState.getScore()
 
 
     

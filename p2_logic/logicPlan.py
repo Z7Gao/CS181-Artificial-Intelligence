@@ -292,7 +292,7 @@ def foodLogicPlan(problem):
     constraint_position_all = constraint_position(1)
 
     while True: 
-        assertion = logic.PropSymbolExpr(pacman_str, start[0], start[1], 0)
+        assertion = logic.PropSymbolExpr(pacman_str, start[0], start[1], 0) # just to create something in Expr form
         for x, y in food:
             tmp = logic.PropSymbolExpr(pacman_str, x, y, 0)
             for i in range(1,t+1):
