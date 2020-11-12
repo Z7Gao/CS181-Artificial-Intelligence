@@ -85,7 +85,7 @@ def depthFirstSearch(problem):
     if problem.isGoalState(curr_state): 
         return []
     fringe = util.Stack()
-    fringe.push( (curr_state,[],0) )
+    fringe.push( (curr_state, [], 0) )
     while True:    
         if fringe.isEmpty(): 
             return False
