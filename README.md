@@ -1,4 +1,4 @@
-# CS181_Artificial_Intelligent
+# CS181-Artificial-Intelligent
 
 ## About the course
 
